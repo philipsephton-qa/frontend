@@ -1,0 +1,17 @@
+header{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+section p.blue{
+    background-color: antiquewhite;
+}
+h2{
+    text-align:justify;
+}
+.blue{
+    color: blue;
+}
+/*  ID = # */
+/*  CLASS = . */
+/*  ELEMENT NAME  */
+/*  ELEMENT_NAME #/. */

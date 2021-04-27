@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- Forms to organise information, and gather user input -->
+    <!-- METHOD = How the information is passed to the server
+        GET = appends the information to the url, PUBLIC
+        POST =  appends the information to the body of a request, PRIVATE -->
+        <!-- Action = where i want my information to go -->
+    <form method="POST" action="">
+        <label>Username:</label><input type="text" name="username" id="username" placeholder="Enter your username:" /><br/>
+        <input type="password" name="password" id="password" placeholder="Enter your password:" /><br/>
+
+        <!-- Three input types which change users keyboard type(Mobile) -->
+        <input type="tel" name="tel" id="tel" placeholder="Enter your phone number:" pattern="[0-9]{11,13}"/><br/>
+        <input type="email" name="email" id="email" placeholder="Enter your email:"><br/>
+        <input type="url" name="github" id="url" placeholder="Enter your Github:" /><br/>
+
+        <input type="date" /><br/>
+
+        <label>Please enter your gender</label><br/>
+        <input type="radio" name="gender" value="Male">Male</label>
+        <input type="radio" name="gender" value="Female">Female</label>
+        <input type="radio" name="gender" value="Prefer not to say">Prefer not to say></label><br/>
+
+        <select name="cars">
+            <option value="default">please select</option>
+            <option value="mercedes">mercedes</option>
+            <option value="audi">audi</option>
+            <option value="volvo">vovlo</option>
+            <option value="ferrari">ferrari</option>
+        </select><br/>
+
+        <input list="animals" />
+        <datalist id="animals">
+            <option value="dog"></option>
+            <option value="cat"></option>
+            <option value="frog"></option>
+            <option value="donkey"></option>
+        </datalist>
+
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+    </form>
+</body>
+</html>
